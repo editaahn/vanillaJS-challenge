@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1{
+  margin: 20px auto;
+  width: 100px;
+  text-align: center;
+}
+section {
+  padding-top: 30px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+
+section#sum{
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+#sum > h2{}
+#sum > #balance{
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: rgb(36, 38, 148);
+}
+#sum > ul{
+  width: 380px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px dashed rgb(141, 136, 136);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+#sum > ul > .inout{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+#sum > ul > .inout > span{
+  font-size: 14px;
+  line-height: 30px;
+}
+#sum > ul > .inout > strong{
+  font-size: 17px;
+  line-height: 30px;
+}
+
+section#history{}
+#history > h2{}
+#history > ul#transactions{
+  width: 400px;
+}
+#history > ul#transactions > li{
+  width: 380px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgb(192, 185, 185);
+  margin-top: 3px;
+  position: relative;
+  padding: 0 10px;
+}
+#history > ul#transactions > li > *{
+  height: 100%;
+  line-height: 50px;
+}
+#history > ul#transactions > li > span{
+  float: left;
+}
+#history > ul#transactions > li > e{
+  float:right;
+}
+#history > ul#transactions > li > button{
+  position: absolute;
+  right: -50px;
+  border: 0;
+  background-color: rgb(192, 185, 185);
+  width: 50px;
+  height: 32px;
+  line-height: 32px;
+}
+
+section#add{}
+#add > h2{}
+#add > form{
+  display: flex;
+  flex-direction: column;
+}
+#add > form > label{}
+#add > form > input{
+  height:20px;
+  line-height:20px;
+  padding: 3px;
+  border: 1px solid rgb(192, 185, 185);
+  margin-bottom: 10px;
+}
+#add > form > button{
+  border: 0;
+  background-color: rgb(36, 38, 148);
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+}

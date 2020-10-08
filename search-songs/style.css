@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+button:focus, input:focus {
+  outline: none;
+}
+
+section{
+  margin: 0 auto; 
+}
+
+section#searchArea{
+  width: 100vh;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchArea > #search{
+  display: block;
+  width: 275px;
+  height: 30px;
+}
+#searchArea > #search > *{
+  height: 30px; 
+  line-height: 30px;
+  font-size: 15px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+#searchArea > #search > #inputWord{
+  width: 200px;
+  margin-right: 10px;
+  padding: 5px;
+}
+#searchArea > #search > #searchBtn{
+  width: 60px;
+  padding:0;
+}
+
+
+section#resultWrapper {
+  display: flex;
+  width: 800px;
+}
+section#resultArea{
+  width: 400px;
+  height: 600px;
+  float: left;
+}
+#resultArea > #results{
+  width: 340px;
+  height: 540px;
+  margin: 30px;
+  overflow-y: scroll;
+}
+#resultArea > #results > ul.songsList{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#resultArea > #results > ul.songsList > li{
+  height: 50px;
+  margin-bottom: 5px;
+  display: inline-flex;
+  justify-content: center;
+}
+#resultArea > #results > ul.songsList > li > img{
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+#resultArea > #results > ul.songsList > li > .listSongInfo {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+}
+#resultArea > #results > ul.songsList > li > .listSongInfo > .artist, 
+#resultArea > #results > ul.songsList > li > .listSongInfo > .title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 22px;
+  font-size: 15px;
+}
+.artist{
+}
+.title{
+  font-weight: bolder;
+}
+#resultArea > #results > ul.songsList > li > button {
+  font-size: 0;
+  line-height: 0;
+  height: 30px;
+  width: 30px;
+}
+#resultArea > #results > ul.songsList > li > .playBtn{
+  background-image: url(https://img.icons8.com/windows/30/000000/play.png);
+}
+#resultArea > #results > ul.songsList > li > .playing{
+  background-image: url(https://img.icons8.com/windows/30/000000/stop.png);
+}
+#resultArea > #results > ul.songsList > li > .showLyricsBtn{
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/block-breaker.png);
+}
+#resultArea > #pagination{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#resultArea > #pagination > .listBtn{
+  font-size: 0;
+  line-height: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#resultArea > #pagination > .prevBtn{
+  background-image: url(https://img.icons8.com/ios-filled/30/000000/long-arrow-left.png);
+}
+#resultArea > #pagination > .nextBtn{
+  background-image: url(https://img.icons8.com/ios-filled/30/000000/long-arrow-right.png);
+}
+
+
+section#detailArea{
+  width: 400px;
+  height: 600px;
+  padding: 30px;
+}
+#detailArea > #songInfo{
+  display: flex;
+  flex-direction: column;
+}
+#detailArea > #songInfo > .detail_title{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bolder;
+}
+#detailArea > #songInfo > .detail_artist{
+  font-size: 22px;
+  line-height: 25px;
+}
+#detailArea > #songLyrics{
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  overflow-y: scroll;
+}

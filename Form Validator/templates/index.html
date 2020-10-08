@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validator</title>
+</head>
+<body>
+  <section>
+    <form name="signup" action='/signup' method="POST" onsubmit="send(event,this)">
+      <h2>Let's Register</h2>
+      <fieldset>
+        <legend>Required</legend>
+        <div>
+          <label for="name">Name</label>
+          <input name="name" type="text" placeholder="ex.홍길동">
+          <small class='msg gray'>특수문자입력불가</small>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input name="email" type="email" placeholder="ex.abc@de.com">
+          <small class='msg'></small>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input name="password" type="password" >
+          <small class='msg'></small>
+        </div>
+        <div>        
+          <label for="confirm">Confirm Password</label>
+          <input name="confirm" type="password" >
+          <small class='msg'></small>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Optional</legend>
+        <div>
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" checked>Female
+          <input type="radio" name="gender">Male
+          <input type="radio" name="gender">Other
+        </div>
+      </fieldset>
+      <button type="submit" id="submitBtn" value="submit">제출</button>
+    </form>
+  </section>
+  <script src="../static/js/index.js"></script>
+</body>
+</html>

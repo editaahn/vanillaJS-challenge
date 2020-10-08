@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>가계부</h1>
+    <section id="sum">
+      <h2>잔고</h2>
+      <div id="balance">₩000</div>
+      <ul>
+        <li class="inout" id="income">
+          <span>수입</span>
+          <strong>₩000.00</strong>
+        </li>
+        <li class="inout" id="expense">
+          <span>지출</span>
+          <strong>₩000.00</strong>
+        </li>
+      </ul>
+    </section>
+    <section id="history">
+      <h2>내역</h2>
+      <ul id="transactions"></ul>
+    </section>
+    <section id="add">
+      <h2>수입/지출 추가</h2>
+      <form id="form">
+        <label for="addDesc"><b>설명</b></label>
+        <input type="text" name="addDesc" placeholder="설명 입력" />
+        <label for="addAmount"><b>증감량</b><br />(음수: 지출 / 양수: 수입)</label>
+        <input type="number" name="addAmount" placeholder="증감량 입력"/>
+        <button type="submit">추가</button>
+      </form>
+    </section>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

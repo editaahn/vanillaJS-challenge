@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffe2bc;
+}
+
+h1 {
+  width: 400px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #58b4ae;
+  margin: 20px auto 20px auto;
+  text-align: center;
+}
+
+section#upper {
+  width: 400px;
+  height: 35px;
+  vertical-align: middle;
+  margin: 20px auto 20px auto;
+}
+#upper > input#keyword {
+  width: 275px;
+  height: 25px;
+  line-height: 20px;
+  font-size: 13px;
+  border: 0;
+  padding: 5px;
+  margin-right: 5px;
+}
+#upper > button#search {
+  width: 100px;
+  height: 35px;
+  line-height: 20px;
+  font-size: 13px;
+  background-color: #58b4ae;;
+  color: #ffe2bc;
+  padding: 5px;
+  font-weight: bold;
+  border: 0;
+}
+
+
+section#lower {
+  width:1300px;
+  display: flex;
+  flex-direction: row;
+}
+
+#lower > #listContainer {
+  width:614px;
+}
+#listContainer > ul {
+  width: 614px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#listContainer > ul > li {
+  width: 100px;
+  height: 100px;
+  list-style: none;
+  position: relative;
+  margin: 1px;
+}
+#listContainer > ul > li > span {
+  opacity: 0;
+  background-color: #ffe2bc;
+  width: 100px;
+  height: 100px;
+  list-style: none;
+  position: absolute;
+}
+#listContainer > ul > li > span:hover {
+  opacity: 0.7;
+  font-weight: bold;
+  transition: opacity 0.4s ease-in-out;
+}
+#listContainer > ul > li > img {
+  width: 100px;
+  height: 100px;
+}
+
+
+#articleContainer {
+  height:600px;
+  width:686px;
+  padding-left: 20px;
+}
+.recipeInfo > h2 {
+  line-height: 50px;
+  font-size: 40px;
+}
+.recipeInfo > img {
+  width: 300px;  
+  float:left;
+}
+.recipeInfo > small {
+  margin: 10px 10px 20px 15px; 
+}
+.recipeIngredients > ul { 
+  margin: 20px;
+}
+.recipeIngredients > ul { 
+  margin: 10px 10px 20px 15px;
+}
+.recipeArticle {
+  margin-top: 20px;
+  clear: both;
+}
+.recipeArticle > ol { 
+  margin: 0 0 20px 15px;
+}

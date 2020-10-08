@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #030852;
+}
+
+section {
+  margin: 20px auto;
+  width: 400px;
+}
+
+
+.moviesContainer {
+  text-align: center;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.moviesContainer > * {
+  margin: 20px auto 0 auto;
+}
+.moviesContainer > h3 {
+  width: 100%;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.moviesContainer > select {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 7px;
+  background-color: #597ef7;
+  border: 0px;
+}
+
+
+.seatsContainer > .screen {
+  margin: 10px auto;
+  width: 150px;
+  height: 0;
+  border-top: 50px solid #fff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  filter: drop-shadow(0px 0px 10px #fff);
+}
+.seatsContainer > .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.seatsContainer > .container > ul {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.seatsContainer > .container > ul > li {
+  margin: 5px;
+  list-style: none;
+  width: 20px;
+  height: 17px;
+  background-color: #2f54eb;
+  border-radius: 5px 5px 1px 1px;
+}
+.seatsContainer > .container > ul > li.on {
+  background-color: #adc6ff;
+}
+
+.info {
+  padding: 0 50px;
+  width: 300px;
+  color: #fff;
+  text-align: left;
+}
+.info > b {
+  color: #adc6ff;
+  width:200px;
+}

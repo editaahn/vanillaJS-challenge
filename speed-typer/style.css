@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+
+section{
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+}
+.getStarted{
+  display: block;
+  margin-right: auto;
+  border: 0;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(34, 64, 147);
+  color: #fff;
+}
+
+section#start{
+  display: block;
+  height: 270px;
+  padding-top: 230px;
+}
+section#start > .getStarted{
+  margin: 0 auto;
+}
+
+
+section#game{
+  display: none;
+  border: 1px solid rgb(34, 64, 147);
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+#game > #gameExecution{
+  width: 400px;
+}
+#game > #gameExecution > #time > #remainSec{
+  color: red;
+}
+#game > #gameExecution > #word{
+  font-size: 30px;
+  line-height: 50px;
+  margin: 30px auto;
+  text-align: center;
+}
+#game > #gameExecution > input{
+  font-size: 25px;
+  line-height: 40px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid rgb(34, 64, 147);
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#game > #scoreBoard{
+  margin-top: 40px;
+  float: right;
+}
+#game > #scoreBoard > *{
+  margin: 0 auto;
+}
+#game > #scoreBoard > h3{
+  font-weight: normal;
+  font-size: 15px;
+  text-align: right;
+}
+#game > #scoreBoard > p{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(34, 64, 147);
+  text-align: right;
+}
+
+section#afterGame{
+  display: none;
+  height: 293px;
+  padding-top: 207px;
+}
+#afterGame > h3{
+  height: 20px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+#afterGame > #finalScore{
+  height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(34, 64, 147);
+  text-align: center;
+}
+#afterGame > .getStarted{
+  margin: 10px auto;
+}

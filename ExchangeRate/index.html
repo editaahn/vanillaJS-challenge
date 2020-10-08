@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="manipulate" class="container">
+
+      <section class="baseContainer">
+        <input type="number" id="insert" value='100'/>
+        <select id="baseCurrencyList" class="currencyList">
+          <option disabled selected>기준 통화 선택</option>
+        </select>
+      </section>
+
+
+      <section class="indication">
+        <em id="excRate"></em>
+        <svg class="bi bi-forward-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.77 12.11l4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
+        </svg>
+      </section>
+      
+      <section class="excContainer">
+        <input id="result" readonly />
+        <select id="excCurrencyList" class="currencyList">
+          <option disabled selected>환산 통화 선택</option>
+        </select>
+      </section>
+
+    </section>
+
+    <script src="./App.js" type='module'></script>
+  </body>
+</html>

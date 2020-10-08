@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#manipulate {
+  width: 1000px;
+  height: 60px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container > section {
+  display: flex;
+  flex-direction: row; 
+}
+
+
+#manipulate > section.baseContainer {
+  width: 40%;
+  background-color: #18b0b0;
+}
+.baseContainer > * {
+  background-color: #18b0b0;
+  font-size: 20px;
+}
+select {
+  width:50%;
+  margin: 0 auto;
+}
+input {
+  width:50%;
+  margin: 0 5px 0 0;
+  text-align: center;
+}
+
+section.excContainer {
+  width: 40%;
+  background-color: #de7119;
+}
+.excContainer > * {
+  background-color: #de7119;
+  font-size: 20px;
+}
+
+
+#manipulate > .indication {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.indication > #excRate {
+  display: block;
+  width: 100%;
+  height: 15px;
+  font-size: 13px;
+  line-height: 15px;
+  font-style: normal;
+  text-align: center;
+}
+.indication > .bi {
+  width: 100%;
+  height: 45px;
+}
